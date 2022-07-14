@@ -1,0 +1,190 @@
+:root {
+    --bloc-with: 33vw;
+    /*--bloc-with: 500px;*/
+    --video-with: 66vw;
+}
+
+body {
+    padding-right: 150px;
+    padding-left: 150px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:600;
+
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bloc {
+    margin: 15px;
+    /*width:35vw;*/
+    width: var(--bloc-with);
+    height: calc(var(--bloc-with) * 0.93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+}
+
+
+.blocTitle {
+    background-color: #4182FA;
+    /*font-size: 35px;*/
+    font-size: 2.3vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.blocTitleContent {
+    /*position: absolute;*/
+    /*left: 60px;*/
+    /*top: 100px;*/
+}
+
+.solid {
+    width: 100%;
+    height: 3px;
+    border-radius: 1px;
+    background-color: white;
+    margin: 2vw;
+    position: relative;
+    left: -30px;
+}
+
+.blocTitleClass {
+    padding: 15px;
+    background-color: white;
+    color: #4741fa;
+    border-radius: 10px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    padding: 10px;
+}
+
+.contactA {
+
+}
+
+.contactIco:hover {
+    transform: scale(1.2);
+    transition-duration: 300ms;
+}
+
+.contactIco {
+    width: 2vw;
+    height: 2vw;
+    margin-right: 10px;
+}
+
+.logoMe {
+    object-position: 0px 0px;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration:none;
+    color: #1f1e1e;
+}
+
+
+.hMe {
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    font-size: 2.3vw;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.blocForMe {
+    background-color: #D8E4F4;
+    font-family: 'CirceRounded',Arial,sans-serif;
+    font-size: 1.5vw;
+    font-weight: 500;
+}
+
+p {
+    margin: 30px;
+}
+
+.br {
+    margin: 20px;
+    width: 100%;
+}
+
+.video {
+    --video-with: 85%;
+    width: var(--video-with);
+    height: calc(var(--video-with) * (16 / 9));
+}
+
+ul {
+    margin: 0;
+}
+
+article {
+    margin: 0;
+}
+
+.blocForLesson {
+    width: 82%;
+    padding: 20px;
+    background-color: #D8E4F4;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    font-size: 1.5vw;
+}
+
+.shadow {
+    box-shadow: 0px 5px 10px #AFC6E6;
+}
+
+.contactUL {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.contactLI {
+    margin-right: 20px;
+    font-size: 1.3vw;
+    position: relative;
+}
+
+.contactLI:hover:before {
+    content: '';
+    position: absolute;
+    left: 0; bottom: -5px;
+    width: 100%;
+    height: 1.5px;
+    background-color: greenyellow;
+    transition: width 0.65s;
+}
+
+.contactLI:hover:before {
+    width: 100%;
+}
